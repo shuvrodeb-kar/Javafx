@@ -12,7 +12,7 @@ public class DBConnector {
         Connection conn = null;
         try {
             
-            String url = "jdbc:sqlite:C:/users/shuvrok/Exam.db";
+            String url = "jdbc:sqlite:C:/Users/shuvrok/git/Javafx/Exam.db";
             // create a connection to the database
             conn = DriverManager.getConnection(url);
             
@@ -27,7 +27,7 @@ public class DBConnector {
 	
 	public static Boolean doAuthenticate(String UserName, String password) {
 		
-		String sql = "SELECT id, UserName,  password FROM Login where UserName = ? and password=?";
+		String sql = "SELECT id, username,  password FROM User where username = ? and password=?";
 		Connection conn = null;
 		try {
 			
@@ -42,7 +42,7 @@ public class DBConnector {
 			
 			while (rs.next()) {
                 System.out.println(rs.getInt("id") +  "\t" + 
-                                   rs.getString("UserName") + "\t" +
+                                   rs.getString("username") + "\t" +
                                    rs.getString("password"));
                 return true;
             }        
