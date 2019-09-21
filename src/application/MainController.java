@@ -34,25 +34,17 @@ public class MainController {
 		String userName = txtUserName.getText();
 		String password = txtPassword.getText();
 		
-		if(!userName.isEmpty() && userName != null && password != null && !password.isEmpty())
-		{
-			if(DBConnector.doAuthenticate(userName, password))
-			{
-				message.setText("Login successfull");
-				
-				((Node)event.getTarget()).getScene().getWindow().hide();
-				openBMIPage();
-			}
-			else
-			{
-				message.setText("Login failed");
-			}
-		}
-		else
-		{
-			message.setText("User name and password cannot be empty");
-		}
-		
+		((Node)event.getTarget()).getScene().getWindow().hide();
+		openBMIPage();
+		/*
+		 * if(!userName.isEmpty() && userName != null && password != null &&
+		 * !password.isEmpty()) { if(DBConnector.doAuthenticate(userName, password)) {
+		 * message.setText("Login successfull");
+		 * 
+		 * ((Node)event.getTarget()).getScene().getWindow().hide(); openBMIPage(); }
+		 * else { message.setText("Login failed"); } } else {
+		 * message.setText("User name and password cannot be empty"); }
+		 */
 	}
 	
 	private void openBMIPage() {

@@ -4,32 +4,19 @@ import application.BMICategory;
 
 public class CategoryFactory {
 	
-	private double _bmiResult = 0;
-	public CategoryFactory(double bmiResult)
-	{
-		_bmiResult = bmiResult;
-	}
-	
 	public Category getCategory(BMICategory categoryType){
 		if (categoryType == null)
 			return null;
 		
-		if(categoryType.equals(BMICategory.Thinness)) {
-			Thinness thinness = new Thinness();
-			if(_bmiResult < 16)
-			{
-				thinness = new SevereThinness();
-			}
-			else if(_bmiResult >= 16 && _bmiResult < 17)
-			{
-				thinness = new ModerateThinness();
-			}			
-			else if(_bmiResult >= 17 && _bmiResult < 18.5)
-			{
-				thinness = new MildThinness();
-			}
-			return thinness;
-			
+		if(categoryType.equals(BMICategory.SevereThinness)) {
+			return new SevereThinness();				
+		}
+		else if(categoryType.equals(BMICategory.MildThinness)) {
+			return new MildThinness();
+		}
+		
+		else if(categoryType.equals(BMICategory.ModerateThinness)) {
+			return new ModerateThinness();
 		}
 		
 		else if(categoryType.equals(BMICategory.Obese)) {

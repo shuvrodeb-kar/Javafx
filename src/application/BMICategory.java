@@ -1,7 +1,9 @@
 package application;
 
 public enum BMICategory {
-	Thinness,
+	SevereThinness,
+	MildThinness,
+	ModerateThinness,
 	Normal,
 	Overweight,
 	Obese			

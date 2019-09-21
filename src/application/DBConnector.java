@@ -12,7 +12,7 @@ public class DBConnector {
         Connection conn = null;
         try {
             
-            String url = "jdbc:sqlite:C:/Users/shuvrok/git/Javafx/Exam.db";
+            String url = "jdbc:sqlite:Exam.db";
             // create a connection to the database
             conn = DriverManager.getConnection(url);
             
