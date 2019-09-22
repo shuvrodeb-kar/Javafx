@@ -36,12 +36,6 @@ public class BMIController {
     private TextField txtInch;
     
     @FXML
-    private Label lblGuideline;
-
-    @FXML
-    private Label lblHealthyHeight;
-    
-    @FXML
     private Label lblresult;
     
     @FXML
@@ -67,9 +61,7 @@ public class BMIController {
     	
     	BMIResult bmiResult= bmicalculation.Result(weight,heightInMeter,age, gender);
     	
-    	//lblHealthyHeight.setText(bmiResult.healthyweight);
-    	//lblGuideline.setText(bmiResult.categoryname);
-    	
+  	
     	lblTips.setText(bmiResult.tips);
     	lblTips.setWrapText(true);
     	

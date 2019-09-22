@@ -5,14 +5,18 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+<AnchorPane prefHeight="476.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <TextField fx:id="txtUserName" layoutX="198.0" layoutY="110.0" />
       <PasswordField fx:id="txtPassword" layoutX="198.0" layoutY="155.0" />
       <Button fx:id="clickMe" layoutX="210.0" layoutY="240.0" mnemonicParsing="false" onAction="#doLogin" text="Clck  Me" />
       <Label fx:id="message" layoutX="57.0" layoutY="197.0" prefHeight="32.0" prefWidth="384.0" />
-      <Label layoutX="211.0" layoutY="24.0" prefHeight="32.0" prefWidth="59.0" text="Login Page" />
+      <Label layoutX="162.0" layoutY="24.0" prefHeight="32.0" prefWidth="264.0" text="Login To Calculate Your BMI" textFill="#4117c9">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
       <Label layoutX="79.0" layoutY="105.0" text="User Name" />
       <Label layoutX="79.0" layoutY="159.0" text="Password" />
    </children>

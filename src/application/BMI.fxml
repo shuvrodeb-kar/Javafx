@@ -33,26 +33,26 @@
       <Label layoutX="153.0" layoutY="59.0" />
       <Label layoutX="584.0" layoutY="53.0" prefHeight="30.0" prefWidth="62.0" text="Result" textFill="#1e63b9">
          <font>
-            <Font size="14.0" />
+            <Font size="17.0" />
          </font>
       </Label>
       <Label layoutX="167.0" layoutY="53.0" prefHeight="30.0" prefWidth="155.0" text="Give your input" textFill="#1e63b9">
          <font>
-            <Font size="14.0" />
+            <Font size="17.0" />
          </font>
       </Label>
       <Label layoutX="378.0" layoutY="126.0" text="Healthy BMI range:   18.5 kg/m2 - 25 kg/m2" textFill="#0c5e8d">
          <font>
-            <Font size="15.0" />
+            <Font size="14.0" />
          </font></Label>
-      <Label fx:id="lblresult" layoutX="378.0" layoutY="94.0" text="BMI" textFill="#d74312">
+      <Label fx:id="lblresult" layoutX="378.0" layoutY="94.0" textFill="#d74312">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
       <StackPane layoutX="378.0" layoutY="167.0" prefHeight="298.0" prefWidth="472.0">
          <children>
-            <Label fx:id="lblTips" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Healthy weight for the height:" textAlignment="JUSTIFY" textFill="#2274ae" />
+            <Label fx:id="lblTips" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="JUSTIFY" textFill="#2274ae" />
          </children>
       </StackPane>
       <Label layoutX="378.0" layoutY="142.0" prefHeight="30.0" prefWidth="82.0" text="Health Tips" textFill="#e49516">

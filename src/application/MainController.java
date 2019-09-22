@@ -26,25 +26,28 @@ public class MainController {
 	@FXML
 	private PasswordField txtPassword;
 		
-	public void doLogin(ActionEvent event) {
-		
-		System.out.println(txtUserName.getText());		
-		System.out.println(txtPassword.getText());
-		
+	public void doLogin(ActionEvent event) 
+	{
 		String userName = txtUserName.getText();
 		String password = txtPassword.getText();
 		
-		((Node)event.getTarget()).getScene().getWindow().hide();
-		openBMIPage();
-		/*
-		 * if(!userName.isEmpty() && userName != null && password != null &&
-		 * !password.isEmpty()) { if(DBConnector.doAuthenticate(userName, password)) {
-		 * message.setText("Login successfull");
-		 * 
-		 * ((Node)event.getTarget()).getScene().getWindow().hide(); openBMIPage(); }
-		 * else { message.setText("Login failed"); } } else {
-		 * message.setText("User name and password cannot be empty"); }
-		 */
+			
+		if(!userName.isEmpty() && userName != null && password != null && !password.isEmpty()) 
+		{ 
+			if(DBConnector.doAuthenticate(userName, password)) {
+				  message.setText("Login successfull");
+		  
+				  ((Node)event.getTarget()).getScene().getWindow().hide(); openBMIPage(); }
+			else 
+			{ 
+				  message.setText("Login failed"); 
+			} 
+		} 
+		else 
+		{
+			message.setText("User name and password cannot be empty"); 
+		}
+		 
 	}
 	
 	private void openBMIPage() {
